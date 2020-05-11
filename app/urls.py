@@ -3,7 +3,7 @@ from django.urls import path
 
 app_name = 'app'
 urlpatterns = [
-     path('', PostList.as_view(), name='post-list'),
+    path('', PostList.as_view(), name='post-list'),
     path('categories/', PostList.as_view(), name='post-list'),
     path('categories/<int:pk>/', PostDetail.as_view(), name='post-detail'),
 
